@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 
 const Login = () => {
   const [data, setData] = useState({
@@ -6,8 +7,10 @@ const Login = () => {
     password: "",
   });
 
-  const onLoginUser = (e) => {
+  const onLoginUser = async (e) => {
     e.preventDefault();
+    const response = await axios.get("/");
+    console.log("🚀 ~ onLoginUser ~ response:", response.data);
   };
   return (
     <div>
