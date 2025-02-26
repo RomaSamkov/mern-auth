@@ -29,6 +29,7 @@ const Register = () => {
   };
   return (
     <div>
+      <h2>REGISTER</h2>
       <form onSubmit={onRegisterUser}>
         <label htmlFor="username">Name:</label>
         <input
