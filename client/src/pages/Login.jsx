@@ -24,7 +24,7 @@ const Login = () => {
       } else {
         setData({});
         toast.success("Login is successful.");
-        navigate("/");
+        navigate("/user");
       }
     } catch (error) {
       console.log(error);
